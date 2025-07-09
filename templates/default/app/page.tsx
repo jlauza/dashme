@@ -34,6 +34,13 @@ export default function Home() {
         <p className="text-gray-600 text-lg max-w-xl">
           Your one-stop solution for managing everything like a boss.
         </p>
+        <Button
+          onClick={() => redirect("/register")}
+          variant="default"
+          className="mt-8 cursor-pointer"
+        >
+          Get Started
+        </Button>
       </main>
 
       {/* Footer */}
