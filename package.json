@@ -1,0 +1,23 @@
+{
+  "name": "create-initiadev-dashboard",
+  "description": "cd create-initiadev-dashboard",
+  "version": "0.0.0",
+  "author": "Jayson Lauza <lauzajayson@gmail.com>",
+  "bin": "src/cli.js",
+  "files": [
+    "src",
+    "templates"
+  ],
+  "keywords": [
+    "create-app",
+    "starter",
+    "template",
+    "initiadev",
+    "nextjs",
+    "shadcn"
+  ],
+  "dependencies": {
+    "create-create-app": "^7.3.0"
+  },
+  "license": "Unlicense"
+}
