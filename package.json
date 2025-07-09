@@ -1,6 +1,6 @@
 {
   "name": "create-initiadev-dashboard",
-  "description": "cd create-initiadev-dashboard",
+  "description": "Reusable CLI to bootstrap Initiadev dashboard apps",
   "version": "1.0.0",
   "author": "Jayson Lauza <lauzajayson@gmail.com>",
   "bin": {
@@ -16,10 +16,15 @@
     "template",
     "initiadev",
     "nextjs",
-    "shadcn"
+    "shadcn",
+    "cli",
+    "starter-kit"
   ],
   "dependencies": {
     "create-create-app": "^7.3.0"
   },
-  "license": "Unlicense"
-}
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlauza/initiadev-dashboard.git"
+  }
