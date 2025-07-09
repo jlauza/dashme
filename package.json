@@ -1,9 +1,11 @@
 {
   "name": "create-initiadev-dashboard",
   "description": "cd create-initiadev-dashboard",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Jayson Lauza <lauzajayson@gmail.com>",
-  "bin": "src/cli.js",
+  "bin": {
+    "create-initiadev-dashboard": "src/cli.js"
+  },
   "files": [
     "src",
     "templates"
