@@ -7,7 +7,7 @@ cd create-initiadev-dashboard
 ## Usage
 
 ```bash
-npx create-initiadev-dashboard <name>
+npx create-initiadev-dashboard <app_name>
 ```
 
 See https://github.com/uetchy/create-create-app#template for the further details.
