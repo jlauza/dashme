@@ -1,10 +1,10 @@
 {
-  "name": "create-initiadev-dashboard",
+  "name": "dashme",
   "description": "Reusable CLI to bootstrap Initiadev dashboard apps",
   "version": "1.0.6",
   "author": "Jayson Lauza <lauzajayson@gmail.com>",
   "bin": {
-    "create-initiadev-dashboard": "src/cli.js"
+    "dashme": "src/cli.js"
   },
   "files": [
     "src",
