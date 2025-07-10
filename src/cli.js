@@ -20,7 +20,6 @@ create("dashme", {
   promptForTemplate: false,
   skipPrompts: true,
   skipGitInit: true,
-  skipInstall: true,
 
   defaultName: rawArg,
 
