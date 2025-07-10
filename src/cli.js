@@ -5,15 +5,16 @@ const { create } = require("create-create-app");
 
 const templateRoot = resolve(__dirname, "..", "templates");
 
-const caveat = `
-This is a caveat!
-You can change this in \`src/cli.js\`.
-`;
-
-// See https://github.com/uetchy/create-create-app/blob/master/README.md for other options.
+const [, , rawArg] = process.argv;
 
 create("dashme", {
   templateRoot,
+  defaultTemplate: "default",
+  promptForTemplate: false,
+  skipPrompts: true,
+
+  args: [rawArg],
+
   extra: {
     name: {
       type: "input",
@@ -59,7 +60,7 @@ create("dashme", {
   },
   caveat: () => {
     console.log(
-      `📂 Don't forget to cd into your new project, run npm run dev and start coding.`
+      `📂 Don't forget to \x1b[1mcd\x1b[0m into your project and run \x1b[1mnpm run dev\x1b[0m to get started.`
     );
   },
 });
