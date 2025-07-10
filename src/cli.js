@@ -6,6 +6,13 @@ const { create } = require("create-create-app");
 const templateRoot = resolve(__dirname, "..", "templates");
 
 const [, , rawArg] = process.argv;
+const fallbackName = rawArg || "my-app";
+
+const cond = process.argv;
+
+if (cond.includes("--help") || cond.includes("-h")) {
+  process.exit(0);
+}
 
 create("dashme", {
   templateRoot,
@@ -13,14 +20,14 @@ create("dashme", {
   promptForTemplate: false,
   skipPrompts: true,
 
-  args: [rawArg],
+  defaultName: rawArg,
 
   extra: {
     name: {
       type: "input",
-      describe: "Project name",
-      default: "my-app",
-      prompt: "if-no-arg",
+      describe: "Project Name: ",
+      default: fallbackName,
+      prompt: rawArg ? false : "if-no-arg",
     },
     // auth: {
     //   type: "confirm",
@@ -50,7 +57,11 @@ create("dashme", {
     //   prompt: "if-no-arg",
     // },
   },
-  after: ({ answers }) => {
+  after: ({ answers, name }) => {
+    if (!answers.name) {
+      answers.name = name || "my-app";
+    }
+
     console.log("📦 Summary:");
     console.log(`- Project Name: ${answers.name}`);
     // console.log(`- Auth Enabled: ${answers.auth}`);
