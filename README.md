@@ -1,15 +1,19 @@
 # Create DashMe
 
-cd new-project
-
-> created by Jayson Lauza (Initiadev) with [create-create-app](https://github.com/uetchy/create-create-app).
-
 ## Usage
 
 ```bash
 npx dashme <app_name>
 or
 npx dashme
+```
+
+```bash
+cd project_name
+```
+
+```bash
+npm run dev
 ```
 
 ## Next Auth
