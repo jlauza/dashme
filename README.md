@@ -13,6 +13,10 @@ cd project_name
 ```
 
 ```bash
+npm install
+```
+
+```bash
 npm run dev
 ```
 
