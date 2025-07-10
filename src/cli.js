@@ -18,6 +18,7 @@ create("dashme", {
     name: {
       type: "input",
       describe: "Project name",
+      default: "my-app",
       prompt: "if-no-arg",
     },
     // auth: {
