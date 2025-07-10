@@ -10,26 +10,12 @@ cd create-initiadev-dashboard
 npx create-initiadev-dashboard <app_name>
 ```
 
-## Test Locally
+## Next Auth
 
-To root
-
-```bash
-npm link
-```
-
-To unlink after test
+Set up Next-Auth authentication
 
 ```bash
-npm unlink -g create-initiadev-dashboard
-```
-
-## Publish
-
-Update version before push
-
-```bash
-npm version patch
+Coming soon!
 ```
 
 See https://github.com/uetchy/create-create-app#template for the further details.
