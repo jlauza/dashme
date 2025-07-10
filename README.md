@@ -1,13 +1,15 @@
-# Create Initiadev Dashboard
+# Create DashMe
 
-cd create-initiadev-dashboard
+cd new-project
 
-> created by [create-create-app](https://github.com/uetchy/create-create-app).
+> created by Jayson Lauza (Initiadev) with [create-create-app](https://github.com/uetchy/create-create-app).
 
 ## Usage
 
 ```bash
-npx create-initiadev-dashboard <app_name>
+npx dashme <app_name>
+or
+npx dashme
 ```
 
 ## Next Auth
