@@ -4,8 +4,6 @@
 
 ```bash
 npx dashme <app_name>
-or
-npx dashme
 ```
 
 ```bash
