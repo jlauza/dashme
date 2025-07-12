@@ -3,7 +3,7 @@
 const { resolve } = require("path");
 const { create } = require("create-create-app");
 
-const templateRoot = resolve(__dirname, "..", "templates");
+const templateRoot = resolve(__dirname, "..", "templates", "default");
 
 const [, , rawArg] = process.argv;
 const fallbackName = rawArg || "my-app";
@@ -16,7 +16,7 @@ if (cond.includes("--help") || cond.includes("-h")) {
 
 create("dashme", {
   templateRoot,
-  defaultTemplate: "default",
+  defaultTemplate: ".",
   promptForTemplate: false,
   skipPrompts: true,
   skipGitInit: true,

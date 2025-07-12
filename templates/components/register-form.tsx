@@ -68,7 +68,7 @@ export default function RegisterForm() {
               {/* Right Image Side */}
               <div className="bg-muted relative hidden md:block">
                 <Image
-                  src="login-bg.png"
+                  src="/login-bg.png"
                   alt="Registration Image"
                   fill
                   className="object-cover dark:brightness-[0.2] dark:grayscale"
