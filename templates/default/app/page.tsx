@@ -1,8 +1,14 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { redirect } from "next/navigation";
-import Image from "next/image";
-import { LogInIcon } from "lucide-react";
+import {
+  LogInIcon,
+  Command,
+  HomeIcon,
+  WrenchIcon,
+  FileTextIcon,
+  PhoneIcon,
+} from "lucide-react";
 
 export default function Home() {
   const goToLogin = () => {
@@ -12,7 +18,46 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar */}
       <nav className="flex items-center justify-between p-6 bg-white shadow">
-        <div className="text-xl font-bold text-gray-800">Logo</div>
+        <div className="text-xl font-bold text-gray-800">
+          <a href="#" className="flex items-center gap-2">
+            <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
+              <Command className="size-4" />
+            </div>
+            <div className="grid flex-1 text-left text-sm leading-tight ">
+              <span className="truncate font-medium">Acme Inc</span>
+              <span className="truncate text-xs">Enterprise</span>
+            </div>
+          </a>
+        </div>
+        <div className="flex justify-center space-x-6 py-4 bg-white">
+          {[
+            { label: "Home", href: "#", icon: <HomeIcon className="size-4" /> },
+            {
+              label: "Services",
+              href: "#",
+              icon: <WrenchIcon className="size-4" />,
+            },
+            {
+              label: "Blogs",
+              href: "#",
+              icon: <FileTextIcon className="size-4" />,
+            },
+            {
+              label: "Contacts",
+              href: "#",
+              icon: <PhoneIcon className="size-4" />,
+            },
+          ].map((item, idx) => (
+            <a
+              key={idx}
+              href={item.href}
+              className="flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-primary transition"
+            >
+              {item.icon}
+              <span className="truncate">{item.label}</span>
+            </a>
+          ))}
+        </div>
         <div>
           <Button
             onClick={goToLogin}
