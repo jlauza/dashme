@@ -1,7 +1,7 @@
 {
   "name": "dashme",
   "description": "Reusable CLI to bootstrap Initiadev dashboard apps",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "author": "Jayson Lauza <lauzajayson@gmail.com>",
   "bin": {
     "dashme": "src/cli.js"
