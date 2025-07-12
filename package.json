@@ -7,7 +7,7 @@
     "dashme": "src/cli.js"
   },
   "files": [
-    "src/cli.js",
+    "src",
     "templates"
   ],
   "keywords": [
