@@ -10,7 +10,6 @@ import {
 import { Separator } from "@/components/ui/separator";
 
 export default function AppHeader({ title }: { title: string }) {
-  console.log("AppHeader rendered with title:", title);
   return (
     <header className="flex h-16 shrink-0 items-center gap-2">
       <div className="flex items-center gap-2 px-4">
