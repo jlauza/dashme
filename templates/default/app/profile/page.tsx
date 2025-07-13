@@ -21,8 +21,9 @@ import { MdOutlineAlternateEmail } from "react-icons/md";
 export default function ProfilePage() {
   const [enabled, setEnabled] = useState(true);
   const [signInMethod, setSignInMethod] = useState("google");
+
   return (
-    <AppShell>
+    <AppShell title="Profile Settings">
       <div className="min-h-screen bg-gray-100 py-12 px-4 gap-6 flex justify-start items-start">
         {/* Basic Info */}
         <Card className="w-full max-w-2xl">
