@@ -14,6 +14,26 @@ export default function Home() {
   const goToLogin = () => {
     redirect("/login");
   };
+
+  const menuItems = [
+    { label: "Home", href: "#", icon: <HomeIcon className="size-4" /> },
+    {
+      label: "Services",
+      href: "#",
+      icon: <WrenchIcon className="size-4" />,
+    },
+    {
+      label: "Blogs",
+      href: "#",
+      icon: <FileTextIcon className="size-4" />,
+    },
+    {
+      label: "Contacts",
+      href: "#",
+      icon: <PhoneIcon className="size-4" />,
+    },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar */}
@@ -30,24 +50,8 @@ export default function Home() {
           </a>
         </div>
         <div className="flex justify-center space-x-6 py-4 bg-white">
-          {[
-            { label: "Home", href: "#", icon: <HomeIcon className="size-4" /> },
-            {
-              label: "Services",
-              href: "#",
-              icon: <WrenchIcon className="size-4" />,
-            },
-            {
-              label: "Blogs",
-              href: "#",
-              icon: <FileTextIcon className="size-4" />,
-            },
-            {
-              label: "Contacts",
-              href: "#",
-              icon: <PhoneIcon className="size-4" />,
-            },
-          ].map((item, idx) => (
+          {/* Nav menu */}
+          {menuItems.map((item, idx) => (
             <a
               key={idx}
               href={item.href}
