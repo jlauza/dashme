@@ -14,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle2, XCircle, Mail, LogIn } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
