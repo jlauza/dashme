@@ -19,7 +19,7 @@ import { FaGoogle, FaGithub } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 export default function ProfilePage() {
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(false);
   const [signInMethod, setSignInMethod] = useState("google");
 
   return (
