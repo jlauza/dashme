@@ -1,6 +1,6 @@
 {
   "name": "dashme",
-  "description": "Reusable CLI to bootstrap Initiadev dashboard apps",
+  "description": "Reusable CLI to bootstrap Initiadev dashboard apps.",
   "version": "1.0.26",
   "author": "Jayson Lauza <lauzajayson@gmail.com>",
   "bin": {
@@ -29,3 +29,4 @@
     "url": "https://github.com/jlauza/dashme.git"
   }
 }
+
