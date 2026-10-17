@@ -12,6 +12,7 @@ import {
   Send,
   Settings2,
   SquareTerminal,
+  Gauge
 } from "lucide-react";
 
 import { NavMain } from "@/components/nav-main";
@@ -35,6 +36,11 @@ const data = {
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
+    {
+      title: "Dashboard",
+      url: "/dashboard",
+      icon: Gauge,
+    },
     {
       title: "Playground",
       url: "#",
