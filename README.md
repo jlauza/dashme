@@ -25,5 +25,3 @@ Set up Next-Auth authentication
 ```bash
 Coming soon!
 ```
-
-See https://github.com/uetchy/create-create-app#template for the further details.
