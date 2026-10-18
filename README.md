@@ -20,7 +20,7 @@ npm run dev
 
 ## Next Auth
 
-Set up Next-Auth authentication
+Set up Next-Auth authentication.
 
 ```bash
 Coming soon!
